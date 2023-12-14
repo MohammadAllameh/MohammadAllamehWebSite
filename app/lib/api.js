@@ -1,0 +1,21 @@
+export const sendContactForm = async (data) =>
+  fetch("/api/contact", {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: { "Content-Type": "application/json", Accept: "application/json" },
+  }).then((res) => {
+    if (!res.ok) throw new Error("Failed to send message");
+    return res.json();
+  });
+
+
+  export const CreateCommentForm = async (data,postid) =>
+  fetch(`http://localhost:8070/api/v1/post/${postid}/comment`, {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: { "Content-Type": "application/json", Accept: "application/json" },
+  }).then((res) => {
+    if (!res.ok) throw new Error("Failed to send message");
+    return res.json();
+  });
+

@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --bg-html: indigo,
+  --header--color: red,
+  --active--color : green,
+  --text--color : blue,
+  --color-icon : blue,
+  --toolpit-color--toolpit : red,
+  --toolpit-bg--toolpit : red
+
+}
+
+@import url('./color/index.css');
+@import url('../app/components/layout/button.module.css');
+
+.base-page-size{
+  /* height: 100vw; */
+  /* background-color: red; */
+  /* color: red; */
+}
+
+/* @media (prefers-color-scheme: dark){
+	:root{
+		--text--color: #252b30;
+	}
+}
+@media (prefers-color-scheme: dark){
+	:root{
+    --text--color: #e2e2e2b6;
+    --bg-html: rgb(255, 255, 255);
+	}
+} */
+
+
+[data-theme='brown'] {
+  --active--color:#f19a1f;
+  --header--color: #884A39;
+  --text--color: #884A39;
+  --bg-html: #F9E0BB;
+  --color-icon : #FFC26F;
+  --toolpit-color--toolpit: #F9E0BB;
+  --toolpit-bg--toolpit : #884A39;
+
+}
+[data-theme='red'] {
+  
+  --active--color : #DF2E38;
+  --header--color: #FA9884;
+  --text--color: #DF2E38;
+  --bg-html : #FFE5CA;
+  --color-icon : #FFF3E2;
+  --toolpit-color--toolpit: #DF2E38;
+  --toolpit-bg--toolpit : #FA9884;
+
+}
+
+[data-theme='blue'] {
+  --active--color:#146C94;
+  --header--color: #64CCC5;
+  --text--color: #146C94;
+  --bg-html: #EEEEEE;
+  --color-icon : #05262a;
+  --toolpit-color--toolpit: #146C94;
+  --toolpit-bg--toolpit : #64CCC5;
+}
+[data-theme='green'] {
+  --active--color:#163A5F;
+  --header--color: #019267;
+  --text--color: #163A5F;
+  --bg-html: #FFD365;
+  --color-icon : #FDFFA9;
+  --toolpit-color--toolpit: #163A5F;
+  --toolpit-bg--toolpit : #019267;
+
+}
+
+[data-theme='yellow'] {
+  --active--color:#4C4B16;
+  --header--color: #E7B10A;
+  --text--color: #4C4B16;
+  --bg-html: #F7F1E5;
+  --color-icon : #898121;
+  --toolpit-color--toolpit: #4C4B16;
+  --toolpit-bg--toolpit : #E7B10A;
+}
+
+
+[data-theme='white'] {
+  --active--color:#FFBA86;
+  --header--color: #765827;
+  --text--color: #FFBA86;
+  --bg-html: #F0EDD4;
+  --color-icon : #E4E4D0;
+  --toolpit-color--toolpit: #FFBA86;
+  --toolpit-bg--toolpit : #765827;
+}
+[data-theme='dark'] {
+  --active--color:#F4EEE0;
+  --header--color: #6D5D6E;
+  --text--color: #020202;
+  --bg-html: #282A3A;
+  --color-icon : #3a293c;
+  --toolpit-color--toolpit: #F4EEE0;
+  --toolpit-bg--toolpit : #6D5D6E;
+
+}
+
+.svgs{
+  /* fill: white; */
+}
